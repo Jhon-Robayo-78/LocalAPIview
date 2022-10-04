@@ -2,3 +2,35 @@
   text-align: center;
 }
 
+#imgSearch{
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+#inputSearch{
+  height: 25px;
+  width: 200px;
+  border-radius: 8px;
+  display: inline;
+}
+
+button{
+  display: inline;
+}
+
+.box-content{
+  margin-top: 3%;
+  border: 2px  solid seashell ;
+  width: 200px;
+  margin-left: auto ;
+  margin-right: auto;
+  
+}
+
+.box-content li{
+  list-style: none;
+  display: block;
+  background-color: bisque;
+  color: black;
+}

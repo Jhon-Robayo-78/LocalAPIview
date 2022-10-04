@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import Card from './view'
 import Listado from "./ListItems"
-import axios from "axios"
+//import axios from "axios"
 
 
 function ViewData(){
@@ -18,38 +18,28 @@ function ViewData(){
             }
         )
     },[])
-
-   /*async componentDidMount(){
-        
-        const res = await axios.get('http://127.0.0.1:5000/store')
-        //const data = await res.json()
-        //this.setState({done:true,store:res.stores})
-        this.setState({done:true,store:e.stores})
-    }*/
-     
-
-       
-  
-        
-        
+    
         return(
             <div>
-                <form>
-                  
-                  <input placeholder="Buscar"/>
+                
+            {/*<div>
+              <input id="inputSearch" placeholder="Buscar"/>
+              <button><img id="imgSearch" src="search_icon.png"/></button>
+        </div> */}    
+            <div >
                  {
                     (typeof data.stores === 'undefined') ? (<p>Cargando...</p>)
                       : (data.stores.map((Item, i)=>{
                         return(
-                            <div key={i}>
+                            <div className="box-content" key={i}>
                                 <Card name={Item.name}/>
                                 <Listado item={Item.item}/>
                             </div>
                             )
                         }))
                 }
-                                
-                </form>
+            </div>                    
+                
             </div>
         );
     }

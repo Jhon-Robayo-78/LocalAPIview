@@ -11,7 +11,7 @@ class Cart extends React.Component{
     render(){
         //const {name,item} = this.props;
         const {name} = this.props
-        return(<p>-{name} </p>)
+        return(<p>{name}</p>)
     }
 }
 export default Cart
